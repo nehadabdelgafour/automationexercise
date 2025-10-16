@@ -43,11 +43,7 @@
             <artifactId>slf4j-simple</artifactId>
             <version>2.0.17</version>
         </dependency>
-        <dependency>
-            <groupId>com.github.javafaker</groupId>
-            <artifactId>javafaker</artifactId>
-            <version>1.0.2</version>
-        </dependency>
+
         <!-- REST-assured for API calls -->
         <dependency>
             <groupId>io.rest-assured</groupId>
@@ -60,6 +56,19 @@
             <groupId>org.json</groupId>
             <artifactId>json</artifactId>
             <version>20240303</version>
+        </dependency>
+        <!-- في pom.xml -->
+        <dependency>
+            <groupId>org.yaml</groupId>
+            <artifactId>snakeyaml</artifactId>
+            <version>2.5</version> <!-- استخدمي أحدث نسخة مستقرة عندك -->
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/com.github.javafaker/javafaker -->
+        <dependency>
+            <groupId>com.github.javafaker</groupId>
+            <artifactId>javafaker</artifactId>
+            <version>1.0.2</version>
         </dependency>
 
     </dependencies>
