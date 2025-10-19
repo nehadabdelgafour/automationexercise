@@ -7,7 +7,7 @@ import io.cucumber.java.en.When;
 import org.example.pages.P001_Register;
 import org.testng.asserts.SoftAssert;
 
-public class D001_Reister {
+public class D001_Register {
     P001_Register register=new P001_Register();
     SoftAssert soft =new SoftAssert();
     Faker faker =new Faker();
