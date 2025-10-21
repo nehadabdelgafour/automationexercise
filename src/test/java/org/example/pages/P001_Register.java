@@ -56,6 +56,8 @@ public class P001_Register {
     public WebElement mobilenumber;
     @FindBy(css = "button[data-qa=\"create-account\"]")
     public WebElement createaccount;
+    @FindBy(css = "a[class=\"btn btn-primary\"]")
+    public WebElement continuebutton;
 
 
 

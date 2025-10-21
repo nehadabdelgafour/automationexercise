@@ -73,4 +73,9 @@ public class D001_Register {
     register.mobilenumber.sendKeys(faker.phoneNumber().cellPhone());
     register.createaccount.click();
     }
+
+    @And("user click on continue button")
+    public void userClickOnContinueButton() {
+    register.continuebutton.click();
+    }
 }

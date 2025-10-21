@@ -7,3 +7,4 @@ Feature: register
   And user click on signup button
   And Enter Account Information
   And Address Information
+  And user click on continue button
