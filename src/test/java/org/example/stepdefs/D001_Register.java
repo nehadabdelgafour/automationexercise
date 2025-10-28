@@ -7,6 +7,11 @@ import io.cucumber.java.en.When;
 import org.example.pages.P001_Register;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.asserts.SoftAssert;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import java.time.Duration;
+
 
 public class D001_Register {
     P001_Register register=new P001_Register();
@@ -73,9 +78,20 @@ public class D001_Register {
     register.mobilenumber.sendKeys(faker.phoneNumber().cellPhone());
     register.createaccount.click();
     }
-
     @And("user click on continue button")
     public void userClickOnContinueButton() {
-    register.continuebutton.click();
+        WebDriverWait wait = new WebDriverWait(hooks.driver, Duration.ofSeconds(10));
+        WebElement button = wait.until(ExpectedConditions.elementToBeClickable(register.continuebutton));
+        button.click();
+    }
+
+    // @And("user click on continue button")
+    //public void userClickOnContinueButton() {
+   // register.continuebutton.click();
+    //}
+
+    @And("User adds to cart Item")
+    public void userAddsToCartItem() {
+    register.addtocartitem.click();
     }
 }

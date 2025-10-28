@@ -58,7 +58,6 @@ public class P001_Register {
     public WebElement createaccount;
     @FindBy(css = "a[class=\"btn btn-primary\"]")
     public WebElement continuebutton;
-
-
-
+    @FindBy(css = "div[class=\"features_items\"] div[class=\"col-sm-4\"]:nth-of-type(2) div[class=\"productinfo text-center\"] a[class=\"btn btn-default add-to-cart\"]")
+    public WebElement addtocartitem;
 }

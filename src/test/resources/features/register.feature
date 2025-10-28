@@ -8,3 +8,4 @@ Feature: register
   And Enter Account Information
   And Address Information
   And user click on continue button
+  And User adds to cart Item
